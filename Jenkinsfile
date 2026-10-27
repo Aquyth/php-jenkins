@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'Aquyth/php-jenkins-demo'
+        IMAGE_NAME = 'Aquyth/php-jenkins'
         CONTAINER_NAME = 'php-jenkins-app'
         APP_PORT = '9000'
     }
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Aquyth/phpjenkins.git'
+                    url: 'https://github.com/Aquyth/php-jenkins.git'
             }
         }
 
