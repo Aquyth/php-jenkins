@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'Aquyth/php-jenkins'
-        CONTAINER_NAME = 'php-jenkins-app'
+        IMAGE_NAME = 'aquyth/php-jenkins'
+        CONTAINER_NAME = 'php-jenkins'
         APP_PORT = '9000'
     }
 
